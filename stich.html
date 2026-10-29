@@ -1,0 +1,366 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Studio — Portofolio Desain &amp; Rekayasa Antarmuka</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus Jakarta Sans:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "inverse-on-surface": "#eef0ff",
+            "secondary-fixed-dim": "#7bd0ff",
+            "secondary-fixed": "#c4e7ff",
+            "on-primary-fixed-variant": "#004c6e",
+            "background": "#faf8ff",
+            "on-primary": "#ffffff",
+            "secondary": "#00668a",
+            "primary-fixed-dim": "#89ceff",
+            "on-tertiary-fixed": "#0c1e26",
+            "inverse-primary": "#89ceff",
+            "primary-container": "#0ea5e9",
+            "surface": "#faf8ff",
+            "on-surface": "#131b2e",
+            "on-secondary-fixed": "#001e2c",
+            "on-error": "#ffffff",
+            "outline": "#6e7881",
+            "on-tertiary": "#ffffff",
+            "surface-dim": "#d2d9f4",
+            "on-error-container": "#93000a",
+            "surface-container-lowest": "#ffffff",
+            "on-primary-fixed": "#001e2f",
+            "on-background": "#131b2e",
+            "surface-variant": "#dae2fd",
+            "surface-container-low": "#f2f3ff",
+            "error": "#ba1a1a",
+            "surface-container-high": "#e2e7ff",
+            "tertiary-fixed": "#d3e5f1",
+            "error-container": "#ffdad6",
+            "surface-tint": "#006591",
+            "surface-container-highest": "#dae2fd",
+            "inverse-surface": "#283044",
+            "primary-fixed": "#c9e6ff",
+            "on-secondary-fixed-variant": "#004c69",
+            "on-secondary": "#ffffff",
+            "on-surface-variant": "#3e4850",
+            "on-tertiary-fixed-variant": "#384953",
+            "outline-variant": "#bec8d2",
+            "on-tertiary-container": "#25353e",
+            "on-secondary-container": "#004d6a",
+            "primary": "#006591",
+            "surface-bright": "#faf8ff",
+            "secondary-container": "#40c2fd",
+            "surface-container": "#eaedff",
+            "tertiary": "#50616b",
+            "tertiary-fixed-dim": "#b7c9d5",
+            "tertiary-container": "#8c9ea9",
+            "on-primary-container": "#003751"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-lg": "1.5rem",
+            "gutter": "2rem",
+            "gutter-mobile": "1rem",
+            "space-xs": "0.25rem",
+            "space-3xl": "6rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "margin": "4rem",
+            "space-xl": "2.5rem",
+            "margin-mobile": "1.5rem",
+            "space-2xl": "4rem"
+          },
+          "fontFamily": {
+            "headline-sm": ["Plus Jakarta Sans"],
+            "label-md": ["Inter"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "body-sm": ["Inter"],
+            "body-lg": ["Inter"],
+            "body-md": ["Inter"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "label-sm": ["Inter"],
+            "display-mobile": ["Plus Jakarta Sans"],
+            "display": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-sm": ["1.25rem", {"lineHeight": "1.75rem", "letterSpacing": "-0.015em", "fontWeight": "500"}],
+            "label-md": ["0.875rem", {"lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "500"}],
+            "headline-lg-mobile": ["1.75rem", {"lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+            "body-sm": ["0.875rem", {"lineHeight": "1.375rem", "letterSpacing": "0em", "fontWeight": "400"}],
+            "body-lg": ["1.125rem", {"lineHeight": "1.875rem", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+            "body-md": ["1rem", {"lineHeight": "1.625rem", "letterSpacing": "-0.005em", "fontWeight": "400"}],
+            "headline-md": ["1.75rem", {"lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+            "headline-lg": ["2.5rem", {"lineHeight": "3rem", "letterSpacing": "-0.025em", "fontWeight": "600"}],
+            "label-sm": ["0.75rem", {"lineHeight": "1rem", "letterSpacing": "0.05em", "fontWeight": "600"}],
+            "display-mobile": ["2.25rem", {"lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "600"}],
+            "display": ["3.75rem", {"lineHeight": "4.25rem", "letterSpacing": "-0.03em", "fontWeight": "600"}]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-surface-container-lowest text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- Header / Navigation Bar -->
+<header class="bg-surface/85 backdrop-blur-md border-b border-outline-variant/30 sticky top-0 z-50 transition-colors duration-150">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-margin-mobile md:px-margin h-16 w-full">
+<a class="text-headline-sm font-headline-sm font-semibold text-on-surface tracking-tight hover:text-primary transition-colors duration-150" href="#beranda">Rasyid</a>
+<div class="flex items-center gap-6 md:gap-8">
+<nav class="flex items-center gap-6 md:gap-8">
+<a class="text-label-md font-label-md text-primary font-semibold transition-colors duration-150 hover:text-primary" href="#beranda">
+            Beranda
+          </a>
+<a class="text-label-md font-label-md text-on-surface-variant transition-colors duration-150 hover:text-primary" href="#proyek">
+            Proyek
+          </a>
+<a class="text-label-md font-label-md text-on-surface-variant transition-colors duration-150 hover:text-primary" href="#tentang">
+            Tentang
+          </a>
+<a class="text-label-md font-label-md text-on-surface-variant transition-colors duration-150 hover:text-primary" href="#kontak">
+            Kontak
+          </a>
+</nav>
+
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section (Beranda) -->
+<section class="max-w-7xl mx-auto px-margin-mobile md:px-margin pt-space-2xl md:pt-space-3xl pb-space-2xl border-b border-outline-variant/30" id="beranda">
+<div class="max-w-4xl">
+
+<h1 class="text-display-mobile md:text-display font-display text-on-surface mb-space-lg leading-tight">a website developer</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mb-space-xl">with over 2 years of experience</p>
+<div class="flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center justify-center bg-on-surface text-surface-container-lowest rounded-lg px-6 py-3 text-label-md font-label-md font-medium hover:bg-primary-container transition-colors duration-150 ease-out" href="#proyek">
+            Lihat Projek</a>
+<a class="inline-flex items-center justify-center bg-transparent border border-outline-variant/60 text-on-surface rounded-lg px-6 py-3 text-label-md font-label-md font-medium hover:bg-surface-container-low hover:border-primary-container hover:text-primary transition-colors duration-150 ease-out" href="#kontak">Kontak</a>
+</div>
+</div>
+<!-- Quick Metrics Strip -->
+
+</section>
+<!-- Proyek Terpilih (Projects Section) -->
+<section class="max-w-7xl mx-auto px-margin-mobile md:px-margin py-space-2xl md:py-space-3xl border-b border-outline-variant/30" id="proyek">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-4">
+<div>
+
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface">
+            Proyek Terbaru
+          </h2>
+</div>
+
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Project 1 -->
+<article class="bg-surface-container-lowest border border-outline-variant/40 rounded-xl p-space-lg flex flex-col justify-between hover:-translate-y-1 hover:border-primary-container/60 hover:shadow-[0_8px_30px_-10px_rgba(14,165,233,0.12)] transition-all duration-200">
+<div>
+<div class="aspect-[16/10] bg-surface-container-low rounded-lg overflow-hidden border border-outline-variant/20 mb-space-md relative">
+<img class="w-full h-full object-cover" data-alt="A clean, highly architectural enterprise banking dashboard user interface shown on a high-resolution display. The design features precise geometric data tables, delicate cyan and sky blue micro-accent charts, and structured white card layers in an orderly light mode aesthetic with cool slate gray borders." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD00JMiaRUdKpUJSMEuV62ZgGymq_seSQKENX7fxRW8A4-HPCS_3RXXO3_aARmx2MPVErG-v4FVTGUCGfhWh4uA948Jnxm1P21w3fn0UWUPO7gAfFv7SUwN8yK4VFZMfjUsNxPoGGtfN7vKcmpSZDY6GZYyaD2n2f1KgqrKl-yRTV7z7VoP0NUVhvZgL6X9bsr6H3UMyj6lEGPt7VFx5PnMLPKNoJDNhjC2njvPJZA">
+<div class="absolute top-3 left-3">
+<span class="inline-block bg-surface-container-lowest/90 backdrop-blur-sm border border-secondary-fixed text-primary text-label-sm font-label-sm px-2.5 py-1 rounded-lg">
+                  Desain Sistem &amp; UI/UX
+                </span>
+</div>
+</div>
+<h3 class="text-headline-sm font-headline-sm font-semibold text-on-surface mb-2">
+              Finansial Core Dashboard
+            </h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-space-md">
+              Platform analitik perbankan institusional terdesentralisasi dengan sistem token terintegrasi untuk operasi kas multi-mata uang.
+            </p>
+</div>
+<div class="pt-space-md border-t border-outline-variant/20 flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-outline">Q4 2024 · Web Enterprise</span>
+
+</div>
+</article>
+<!-- Project 2 -->
+
+<!-- Project 3 -->
+
+</div>
+</section>
+<!-- Tentang Saya (About Section) -->
+<section class="max-w-7xl mx-auto px-margin-mobile md:px-margin py-space-2xl md:py-space-3xl border-b border-outline-variant/30" id="tentang">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl">
+<!-- Header & Profil -->
+<div class="lg:col-span-5">
+
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface mb-space-md">
+            Tentang Saya
+          </h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-space-lg leading-relaxed">
+            Praktisi desain produk dan arsitek antarmuka dengan fokus mendalam pada penyederhanaan kompleksitas perangkat lunak. Saya menjembatani strategi bisnis, kebutuhan manusia, dan efisiensi penulisan kode melalui sistem desain yang terukur.
+          </p>
+
+</div>
+<!-- Pilar Filosofi & Rekam Jejak -->
+<div class="lg:col-span-7 flex flex-col justify-between space-y-space-xl">
+<!-- 3 Pillars -->
+<div>
+
+
+</div>
+<!-- Rekam Jejak Kerja -->
+<div>
+<div class="text-label-sm font-label-sm text-outline tracking-wider font-semibold mb-space-md">
+              RIWAYAT PENDIDIKAN</div>
+<div class="divide-y divide-outline-variant/30 border-y border-outline-variant/30">
+<div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<div>
+<div class="text-body-md font-body-md font-semibold text-on-surface">Principal Product Designer</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">Vektor Solusi Teknologi</div>
+</div>
+<span class="text-label-sm font-label-sm text-outline">2022 — Sekarang</span>
+</div>
+<div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<div>
+<div class="text-body-md font-body-md font-semibold text-on-surface">Senior Design Systems Lead</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">Nusantara Digital Platform</div>
+</div>
+<span class="text-label-sm font-label-sm text-outline">2020 — 2022</span>
+</div>
+<div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<div>
+<div class="text-body-md font-body-md font-semibold text-on-surface">UI/UX Specialist</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">Artha Financial Studio</div>
+</div>
+<span class="text-label-sm font-label-sm text-outline">2017 — 2020</span>
+</div>
+</div>
+</div>
+<!-- Keahlian & Alat Kerja -->
+<div>
+
+<div class="flex flex-wrap gap-2">
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Kontak (Contact Section) -->
+<section class="max-w-7xl mx-auto px-margin-mobile md:px-margin py-space-2xl md:py-space-3xl" id="kontak">
+<div class="mb-space-2xl">
+
+
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface">
+          Kontak
+        </h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl">
+<!-- Direct Contact Details -->
+<div class="lg:col-span-5 space-y-space-xl">
+<p class="text-body-lg font-body-lg text-on-surface-variant">
+            Terbuka untuk konsultasi desain arsitektur antarmuka tingkat lanjut, perancangan sistem desain institusi, dan kepemimpinan tim produk terpilih.
+          </p>
+<div class="space-y-4">
+<div class="border-b border-outline-variant/30 pb-4">
+<span class="text-label-sm font-label-sm text-outline block mb-1">Email Utama</span>
+<a class="text-headline-sm font-headline-sm text-on-surface hover:text-primary transition-colors duration-150" href="mailto:contact@studio-design.id">
+                contact@studio-design.id
+              </a>
+</div>
+<div class="border-b border-outline-variant/30 pb-4">
+<span class="text-label-sm font-label-sm text-outline block mb-1">Nomor Telepon</span>
+<span class="text-body-lg font-body-lg text-on-surface font-medium">
+                +62 21 5088 2390
+              </span>
+</div>
+<div class="border-b border-outline-variant/30 pb-4">
+<span class="text-label-sm font-label-sm text-outline block mb-1">Lokasi &amp; Zona Waktu</span>
+<span class="text-body-md font-body-md text-on-surface">
+                Jakarta, Indonesia (WIB / GMT+7)
+              </span>
+</div>
+</div>
+<div>
+<span class="text-label-sm font-label-sm text-outline block mb-3 font-semibold">Tautan Jaringan</span>
+<div class="flex items-center gap-4">
+<a class="text-label-md font-label-md text-primary hover:text-on-surface transition-colors duration-150 inline-flex items-center gap-1" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+                LinkedIn
+                <span class="material-symbols-outlined text-[1rem]">north_east</span>
+</a>
+<span class="text-outline-variant">/</span>
+<a class="text-label-md font-label-md text-primary hover:text-on-surface transition-colors duration-150 inline-flex items-center gap-1" href="https://github.com" rel="noopener noreferrer" target="_blank">
+                GitHub
+                <span class="material-symbols-outlined text-[1rem]">north_east</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Contact Form -->
+<div class="lg:col-span-7">
+<form class="p-space-lg md:p-space-xl border border-outline-variant/40 rounded-xl bg-surface-container-lowest space-y-space-md" onsubmit="event.preventDefault();">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface mb-2 font-medium" for="name">Nama Lengkap</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/60 rounded-lg px-4 py-3 text-body-md font-body-md text-on-surface placeholder:text-outline/70 focus:border-primary-container focus:ring-2 focus:ring-secondary-fixed outline-none transition-colors duration-150" id="name" placeholder="Nama Anda" required="" type="text">
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface mb-2 font-medium" for="email">Email</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/60 rounded-lg px-4 py-3 text-body-md font-body-md text-on-surface placeholder:text-outline/70 focus:border-primary-container focus:ring-2 focus:ring-secondary-fixed outline-none transition-colors duration-150" id="email" placeholder="nama@perusahaan.com" required="" type="email">
+</div>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface mb-2 font-medium" for="subject">Subjek</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/60 rounded-lg px-4 py-3 text-body-md font-body-md text-on-surface placeholder:text-outline/70 focus:border-primary-container focus:ring-2 focus:ring-secondary-fixed outline-none transition-colors duration-150" id="subject" placeholder="Tujuan kolaborasi atau lingkup proyek" required="" type="text">
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface mb-2 font-medium" for="message">Pesan</label>
+<textarea class="w-full bg-surface-container-lowest border border-outline-variant/60 rounded-lg px-4 py-3 text-body-md font-body-md text-on-surface placeholder:text-outline/70 focus:border-primary-container focus:ring-2 focus:ring-secondary-fixed outline-none transition-colors duration-150 resize-y" id="message" placeholder="Tuliskan gambaran ringkas produk dan ekspektasi Anda..." required="" rows="5"></textarea>
+</div>
+<div class="pt-2">
+<button class="w-full sm:w-auto inline-flex items-center justify-center bg-primary-container text-on-primary-container font-semibold rounded-lg px-8 py-3 text-label-md font-label-md hover:bg-on-surface hover:text-surface-container-lowest transition-colors duration-150 ease-out" type="submit">
+                Kirim Pesan
+              </button>
+</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Web Footer Component -->
+<footer class="bg-surface border-t border-outline-variant/30">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-margin-mobile md:px-margin py-8 w-full gap-4">
+<div class="flex items-center gap-4">
+<span class="text-headline-sm font-headline-sm font-semibold text-on-surface">Studio</span>
+<span class="text-outline-variant hidden sm:inline">|</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">© 2025 Studio. All rights reserved.</span>
+</div>
+<div class="flex items-center gap-6">
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-150" href="#beranda">
+          Colophon
+        </a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-150" href="#proyek">
+          ReadCV
+        </a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-150" href="mailto:contact@studio-design.id">
+          Email
+        </a>
+</div>
+</div>
+</footer>
+
+
+</body></html>
