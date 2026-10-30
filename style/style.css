@@ -1,0 +1,20 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, .font-heading {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Nav mobile menu toggle via checkbox (tanpa loncat scroll) */
+#nav-toggle:checked ~ #mobile-menu {
+    display: flex !important;
+}
+
+#nav-toggle:checked ~ label .icon-open {
+    display: none !important;
+}
+
+#nav-toggle:checked ~ label .icon-close {
+    display: block !important;
+}
